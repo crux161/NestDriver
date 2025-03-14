@@ -1,6 +1,6 @@
-# NestDriver - C-Shared Go Library with Submodule Dependencies
+# NestDriver - a stupid simple example with cgo and c 
 
-NestDriver demonstrates building a Go library as a C-shared object, integrating C code from a submodule. This setup facilitates interaction between Go and C, useful for performance-critical components or leveraging existing C libraries.
+NestDriver demonstrates building a Go library as a C-shared object, integrating C code from a submodule. This setup facilitates interaction between Go and C, useful only as a template for other actual projects.
 
 ## Getting Started
 
@@ -18,4 +18,4 @@ NestDriver demonstrates building a Go library as a C-shared object, integrating 
     make -j $(nproc)
     make run
     ```
-
+![ili pika](src/pika.png)

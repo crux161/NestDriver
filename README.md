@@ -1,4 +1,5 @@
-# NestDriver - a stupid simple example with cgo and c 
+# NestDriver 
+## a stupid simple example with cgo and c 
 
 NestDriver demonstrates building a Go library as a C-shared object, integrating C code from a submodule. This setup facilitates interaction between Go and C, useful only as a template for other actual projects.
 

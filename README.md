@@ -7,32 +7,15 @@ NestDriver demonstrates building a Go library as a C-shared object, integrating 
 1.  **Clone the Repository:**
 
     ```bash
-    git clone <repository_url>
-    cd <repository_name>
+    git clone https://github.com/crux161/NestDriver.git 
+    cd NestDriver
     ```
 
-    Replace `<repository_url>` and `<repository_name>` with your actual repository URL and name.
 
 2.  **Build the Project:**
 
     ```bash
-    make
-    ```
-
-    This command:
-
-    * Builds the C-shared Go library (`libcgo_test.so`).
-    * Builds the C library located in the `nogo` submodule.
-    * Moves the resulting `.so` files into the `nest` directory.
-
-3.  **Run the Test Driver:**
-
-    ```bash
+    make -j $(nproc)
     make run
     ```
 
-    This command:
-
-    * Activates a Python virtual environment in the `nest` directory.
-    * Executes the Python driver script (`driver.py`) within the virtual environment, testing the C-shared Go library.
-    * Deactivates the virtual environment.
